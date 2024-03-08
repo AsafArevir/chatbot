@@ -1,12 +1,62 @@
-<!--
-// v0 by Vercel.
-// https://v0.dev/t/RV2OvWVl5Xp
--->
-<div class="grid h-screen items-center max-w-7xl mx-auto px-4"><div class="flex flex-col h-[calc(100vh-1rem)] rounded-lg border border-gray-200 dark:border-gray-800 overflow-hidden w-full"><div class="flex items-center justify-between p-4 border-b border-gray-200 dark:border-gray-800"><h1 class="text-xl font-semibold">Chatbot Example</h1></div><div class="flex-1 flex flex-col justify-end p-4 gap-4"><div class="flex items-start gap-4"><div class="flex items-center"><img src="/placeholder.svg" alt="Avatar" width="40" height="40" class="rounded-full" style="aspect-ratio: 40 / 40; object-fit: cover;"><div class="bg-gray-100 dark:bg-gray-800 rounded-lg p-4">
-           <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-<df-messenger
-  intent="WELCOME"
-  chat-title="Demostracion"
-  agent-id="cc9c6240-5f6a-4e3f-b92e-90447516e6f9"
-  language-code="es"
-></df-messenger>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatbot Ejemplo</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      padding-top: 50px;
+      font-family: Arial, sans-serif;
+    }
+    .chatbot-container {
+      position: relative;
+    }
+    .chatbot-arrow {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      transform: rotate(45deg);
+      width: 30px;
+      height: 30px;
+      background-color: #007bff;
+      color: #fff;
+      text-align: center;
+      line-height: 30px;
+      cursor: pointer;
+    }
+    .chatbot-arrow:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>La importancia de los Chatbots</h1>
+    <p>Los chatbots son herramientas poderosas que pueden mejorar significativamente la experiencia del cliente y la eficiencia operativa de las empresas. Algunas de las razones por las que los chatbots son importantes incluyen:</p>
+    <ul>
+      <li>Automatización de tareas repetitivas.</li>
+      <li>Disponibilidad 24/7 para atender consultas de los clientes.</li>
+      <li>Respuestas rápidas y precisas a preguntas frecuentes.</li>
+      <li>Mejora de la satisfacción del cliente al proporcionar un servicio rápido y conveniente.</li>
+      <li>Reducción de costos al disminuir la necesidad de personal humano para tareas de atención al cliente.</li>
+    </ul>
+    <p>En resumen, los chatbots son una herramienta valiosa para cualquier empresa que busque mejorar la interacción con sus clientes y optimizar sus procesos internos.</p>
+  </div>
+
+  <div class="chatbot-container">
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+      intent="WELCOME"
+      chat-title="Demostracion"
+      agent-id="cc9c6240-5f6a-4e3f-b92e-90447516e6f9"
+      language-code="es"
+    ></df-messenger>
+    <div class="chatbot-arrow">&#10148;</div>
+  </div>
+
+</body>
+</html>
+
