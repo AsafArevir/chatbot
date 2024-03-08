@@ -1,68 +1,18 @@
-/**
- * v0 by Vercel.
- * @see https://v0.dev/t/RV2OvWVl5Xp
- * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
- */
-import { Input } from "@/components/ui/input"
-import { Button } from "@/components/ui/button"
-
-export default function Component() {
-  return (
-    <div className="grid h-screen items-center max-w-7xl mx-auto px-4">
-      <div className="flex flex-col h-[calc(100vh-1rem)] rounded-lg border border-gray-200 dark:border-gray-800 overflow-hidden w-full">
-        <div className="flex items-center justify-between p-4 border-b border-gray-200 dark:border-gray-800">
-          <h1 className="text-xl font-semibold">Chatbot Example</h1>
-        </div>
-        <div className="flex-1 flex flex-col justify-end p-4 gap-4">
-          <div className="flex items-start gap-4">
-            <div className="flex items-center">
-              <img
-                alt="Avatar"
-                className="rounded-full"
-                height={40}
-                src="/placeholder.svg"
-                style={{
-                  aspectRatio: "40/40",
-                  objectFit: "cover",
-                }}
-                width={40}
-              />
-              <div className="bg-gray-100 dark:bg-gray-800 rounded-lg p-4">Hi there! How can I help you today?</div>
-            </div>
-          </div>
-          <div className="flex justify-end items-start gap-4">
-            <div className="bg-gray-100 dark:bg-gray-800 rounded-lg p-4">
-              Can you provide me with some information about your products?
-            </div>
-            <div className="flex items-center">
-              <img
-                alt="Avatar"
-                className="rounded-full"
-                height={40}
-                src="/placeholder.svg"
-                style={{
-                  aspectRatio: "40/40",
-                  objectFit: "cover",
-                }}
-                width={40}
-              />
-              <div className="bg-gray-100 dark:bg-gray-800 rounded-lg p-4">
-                I'd be happy to help. Please wait a moment while I fetch the information for you.
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="flex items-center border-t border-gray-200 dark:border-gray-800 p-4">
-          <Input className="flex-1 min-w-0" placeholder="Type a message..." />
-          <Button className="ml-4" type="submit">
-            Send
-          </Button>
-        </div>
-      </div>
-      <div className="flex justify-center gap-4 mt-4">
-        <Button className="bg-blue-500 text-white px-4 py-2 rounded-lg">Support Chatbot</Button>
-      </div>
-    </div>
-  )
-}
-
+<!--
+// v0 by Vercel.
+// https://v0.dev/t/RV2OvWVl5Xp
+-->
+<div class="grid h-screen items-center max-w-7xl mx-auto px-4"><div class="flex flex-col h-[calc(100vh-1rem)] rounded-lg border border-gray-200 dark:border-gray-800 overflow-hidden w-full"><div class="flex items-center justify-between p-4 border-b border-gray-200 dark:border-gray-800"><h1 class="text-xl font-semibold">Chatbot Example</h1></div><div class="flex-1 flex flex-col justify-end p-4 gap-4"><div class="flex items-start gap-4"><div class="flex items-center"><img src="/placeholder.svg" alt="Avatar" width="40" height="40" class="rounded-full" style="aspect-ratio: 40 / 40; object-fit: cover;"><div class="bg-gray-100 dark:bg-gray-800 rounded-lg p-4">
+            Hi there! How can I help you today?
+          </div></div></div><div class="flex justify-end items-start gap-4"><div class="bg-gray-100 dark:bg-gray-800 rounded-lg p-4">
+          Can you provide me with some information about your products?
+        </div><div class="flex items-center"><img src="/placeholder.svg" alt="Avatar" width="40" height="40" class="rounded-full" style="aspect-ratio: 40 / 40; object-fit: cover;"><div class="bg-gray-100 dark:bg-gray-800 rounded-lg p-4">
+            I'd be happy to help. Please wait a moment while I fetch
+            the information for you.
+ </div></div></div></div><div class="flex items-center border-t border-gray-200 dark:border-gray-800 p-4"><script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  intent="WELCOME"
+  chat-title="Demostracion"
+  agent-id="cc9c6240-5f6a-4e3f-b92e-90447516e6f9"
+  language-code="es"
+></df-messenger></div></div></div>
