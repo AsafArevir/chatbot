@@ -7,17 +7,18 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <style>
     body {
-      padding-top: 50px;
+      padding-top: 70px; /* Altura de la barra de navegación */
       font-family: Arial, sans-serif;
     }
     .chatbot-container {
-      position: relative;
-    }
-    .chatbot-arrow {
-      position: absolute;
+      position: fixed;
       bottom: 20px;
       right: 20px;
-      transform: rotate(45deg);
+    }
+    .navbar-brand {
+      margin-right: 40px; /* Espacio adicional para alinear la flecha */
+    }
+    .chatbot-arrow {
       width: 30px;
       height: 30px;
       background-color: #007bff;
@@ -33,8 +34,22 @@
 </head>
 <body>
 
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Chatbot Ejemplo</a>
+      <!-- Agregar otros elementos de la navbar si es necesario -->
+    </div>
+  </nav>
+
   <div class="container">
-    <h1>La importancia de los Chatbots</h1>
+    <h1>¿Qué es un Chatbot?</h1>
+    <p>Un chatbot es un programa informático diseñado para simular conversaciones con usuarios humanos, especialmente a través de la web o aplicaciones móviles. Los chatbots pueden responder preguntas, proporcionar información, realizar acciones y mucho más, todo a través de una interfaz de chat.</p>
+    <p>Los chatbots utilizan tecnologías como el procesamiento del lenguaje natural (NLP) y la inteligencia artificial (IA) para comprender y responder a las preguntas de los usuarios de manera inteligente y efectiva. Pueden ser programados para realizar tareas específicas o aprender y mejorar con el tiempo a través de la interacción con los usuarios.</p>
+    <p>En resumen, los chatbots son una herramienta poderosa que puede mejorar la experiencia del usuario, aumentar la eficiencia y ofrecer servicios automatizados las 24 horas del día, los 7 días de la semana.</p>
+  </div>
+
+  <div class="container mt-5">
+    <h2>La importancia de los Chatbots</h2>
     <p>Los chatbots son herramientas poderosas que pueden mejorar significativamente la experiencia del cliente y la eficiencia operativa de las empresas. Algunas de las razones por las que los chatbots son importantes incluyen:</p>
     <ul>
       <li>Automatización de tareas repetitivas.</li>
@@ -44,6 +59,18 @@
       <li>Reducción de costos al disminuir la necesidad de personal humano para tareas de atención al cliente.</li>
     </ul>
     <p>En resumen, los chatbots son una herramienta valiosa para cualquier empresa que busque mejorar la interacción con sus clientes y optimizar sus procesos internos.</p>
+  </div>
+
+  <div class="container mt-5">
+    <h2>Tipos de Chatbot</h2>
+    <p>Existen varios tipos de chatbots, cada uno con sus propias características y usos. Algunos de los tipos más comunes son:</p>
+    <ul>
+      <li><strong>Chatbots de respuesta predefinida:</strong> Estos chatbots están programados para responder preguntas específicas con respuestas predefinidas. Son útiles para proporcionar información básica o realizar tareas simples.</li>
+      <li><strong>Chatbots basados en reglas:</strong> Estos chatbots utilizan reglas y lógica predefinidas para responder a las preguntas de los usuarios. Son eficaces para escenarios específicos donde las respuestas pueden ser predeterminadas.</li>
+      <li><strong>Chatbots de aprendizaje automático:</strong> Estos chatbots utilizan algoritmos de aprendizaje automático para mejorar con el tiempo a medida que interactúan con los usuarios. Pueden comprender el lenguaje natural y proporcionar respuestas más precisas y personalizadas.</li>
+      <li><strong>Chatbots híbridos:</strong> Estos chatbots combinan diferentes enfoques, como reglas predefinidas y aprendizaje automático, para ofrecer una experiencia más completa y flexible.</li>
+    </ul>
+    <p>La elección del tipo de chatbot adecuado depende de los objetivos y necesidades específicas de tu empresa.</p>
   </div>
 
   <div class="chatbot-container">
@@ -59,4 +86,3 @@
 
 </body>
 </html>
-
